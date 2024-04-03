@@ -35,8 +35,11 @@ describe('nft collection smc', () => {
         //imageData = Buffer.from(await (await (await fetch('https://www.svgheart.com/wp-content/uploads/2021/11/graduation-diploma-with-ribbon-grad-free-svg-file-SvgHeart.Com.png')).blob()).arrayBuffer())
         //imageDataSbt = Buffer.from(await (await (await fetch('https://www.svgheart.com/wp-content/uploads/2023/05/high-school-diploma_514-430-min.png')).blob()).arrayBuffer())
         // load binary file to Buffer
-        imageData = Buffer.from(require('fs').readFileSync('temp/data/graduation-diploma-with-ribbon-grad-free-svg-file-SvgHeart.Com.png'))
-        imageDataSbt = Buffer.from(require('fs').readFileSync('temp/data/high-school-diploma_514-430-min.png'))
+        //imageData = Buffer.from(require('fs').readFileSync('temp/data/collection.png'))
+        //imageDataSbt = Buffer.from(require('fs').readFileSync('temp/data/item.png'))
+        // generated data
+        imageData = Buffer.concat([Buffer.from("PNG"), Buffer.alloc(1000, 0), Buffer.from("END")]);
+        imageDataSbt = Buffer.concat([Buffer.from("JPEG"), Buffer.alloc(5000, 0), Buffer.from("END")]);
 
         config = {
             ownerAddress: OWNER_ADDRESS,
