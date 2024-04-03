@@ -1,4 +1,5 @@
 # TON SBT for [TON dev study](https://t.me/ton_dev_study)
+[![test workflow result](../../actions/workflows/test.yml/badge.svg)](../../actions/workflows/test.yml)
 
 Based on [TON SBT with onchain metadata](https://github.com/Stanislav-Povolotsky/ton--sbt-onchain/).  
 Collection was deployed in the testnet: [kQDQ3lh1lNVhWMBunvS6qUzSY7A8b4enA07KTZcA6Gd5Z-OZ](https://testnet.tonviewer.com/kQDQ3lh1lNVhWMBunvS6qUzSY7A8b4enA07KTZcA6Gd5Z-OZ?section=overview)
